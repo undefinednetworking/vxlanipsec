@@ -124,5 +124,7 @@ Promiscuous mode (`--nicpromisc2 allow-all`) is pre-enabled on VirtualBox interf
 * **Netplan Persistence**: Internal IP addresses (`10.100.0.0/24` and `10.200.0.0/24`) are persisted via `/etc/netplan/60-ovs-internals.yaml`[cite: 1].
 * **Flow Persistence**: Custom systemd unit `/etc/systemd/system/ovs-restore-flows.service` reloads saved flows from `/etc/openvswitch/br0-flows.txt` upon reboot[cite: 1].
 * **Automated IPsec Service**: Systemd enables `openvswitch-ipsec` to manage StrongSwan tunnel key negotiations automatically using standard OVS options (`options:psk=...`)[cite: 1].
-http://googleusercontent.com/youtube_content/1
 
+## **Watch a quick demo at**
+
+https://www.youtube.com/watch?v=_12egWUnd8I 
