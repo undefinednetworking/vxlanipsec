@@ -13,7 +13,7 @@ For detailed theory, architectural breakdowns, and step-by-step video walkthroug
 The lab provisions two Ubuntu 26.04 VMs (`node1` and `node2`) connected via a bridged public network. Each node runs Open vSwitch with two isolated internal interfaces routed across two distinct tunnel types:
 
 1. **Cleartext Tunnel (VXLAN)**: Routes traffic between `int-clear` interfaces over UDP port 4789.
-2. **Encrypted Tunnel (Geneve + IPsec)**: Routes traffic between `int-ipsec` interfaces using Geneve encapsulation over UDP port 6081, protected by OVS IPsec auto-tunneling (StrongSwan) with Pre-Shared Keys (PSK).
+2. **Encrypted Tunnel (Geneve + IPsec)**: Routes traffic between `int-ipsec` interfaces using Geneve encapsulation over UDP port 6081, protected by OVS IPsec auto-tunneling (StrongSwan) with self signed Certificates.
 
 ```text
                      +---------------------------------------+
@@ -32,7 +32,7 @@ The lab provisions two Ubuntu 26.04 VMs (`node1` and `node2`) connected via a br
            |                   |                   |                   |
            |  int-ipsec        | - Geneve + IPsec ->  int-ipsec        |
            |  (10.200.0.1/24)  | (6081 Encrypted)  |  (10.200.0.2/24)  |
-           +-------------------+                   +-------------------+
+           +-------------------+  (ML-KEM1024)     +-------------------+
 
 ```
 
