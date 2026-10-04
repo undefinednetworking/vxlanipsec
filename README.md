@@ -71,8 +71,8 @@ The lab provisions two Ubuntu 26.04 VMs (`node1` and `node2`) connected via a br
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/ovs-ipsec-geneve-lab.git
-   cd ovs-ipsec-geneve-lab ```
+   git clone https://github.com/undefinednetworking/vxlanipsec.git
+   cd vxlanipsec ```
 
 2. **Spin up both virtual machines:**
 
