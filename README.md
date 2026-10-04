@@ -1,4 +1,4 @@
-# Open vSwitch (OVS) Network Security Lab: VXLAN, Geneve & IPsec
+# Open vSwitch (OVS) Network Security Lab: VXLAN, Geneve, IPsec, ML-KEM1024 & Certificates
 
 This repository contains an automated multi-node VirtualBox environment provisioned via **Vagrant** to explore overlay networking, packet encapsulation, and tunnel encryption using **Open vSwitch (OVS)**, **VXLAN**, **Geneve**, and **IPsec (StrongSwan)**.
 
